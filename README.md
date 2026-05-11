@@ -2,12 +2,20 @@
 
 Agent Skill for running a local TradingAgents Codex fork as a repeatable stock and ETF research workflow.
 
+![TradingAgents Codex Skill workflow](assets/tradingagents-codex-skill-flow.png)
+
 The skill wraps:
 
 - setup validation for a local `TradingAgents_codex` checkout
 - dry-run command construction
 - full-chain `tradingagents codex-analyze` runs
 - report summarization from `portfolio_manager.json`
+
+## Related Project
+
+This skill is a companion workflow for the open-source [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) framework.
+
+It does not vendor or replace TradingAgents. It wraps a local TradingAgents Codex-compatible checkout and provides repeatable Agent Skill workflows for setup checks, analysis runs, and report summarization.
 
 ## Requirements
 
@@ -32,6 +40,12 @@ For Claude Code:
 ```bash
 mkdir -p ~/.claude/skills
 git clone https://github.com/wenyupapa-sys/tradingagents-codex-skill.git ~/.claude/skills/tradingagents-codex
+```
+
+With the Skills CLI:
+
+```bash
+npx skills add wenyupapa-sys/tradingagents-codex-skill -g -y
 ```
 
 Configure your TradingAgents project path:
