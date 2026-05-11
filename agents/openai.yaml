@@ -1,0 +1,4 @@
+interface:
+  display_name: "TradingAgents Codex"
+  short_description: "Run local multi-agent stock and ETF research."
+  default_prompt: "Use $tradingagents-codex to run a full TradingAgents analysis for QQQ and summarize the final decision."
